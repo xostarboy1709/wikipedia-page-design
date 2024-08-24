@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wikipedia</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                        <div class="d-flex"> <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"> <i class="bi bi-list"></i>
+                                        <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Main page</a></li>
+                                                <li><a class="dropdown-item" href="#">Contents</a></li>
+                                                <li><a class="dropdown-item" href="#">Current events</a></li>
+                                                <li><a class="dropdown-item" href="#">Random article</a></li>
+                                                <li><a class="dropdown-item" href="#">About Wikipedia</a></li>
+                                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                                <li><a class="dropdown-item" href="#">Donate</a></li>
+                                                <li><a class="dropdown-item" href="#">Contribute</a></li>
+                                                <hr class="dropdown-divider">
+                                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                                <li><a class="dropdown-item" href="#">Learn to edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Community portal</a></li>
+                                                <li><a class="dropdown-item" href="#">Recent changes</a></li>
+                                                <li><a class="dropdown-item" href="#">Upload file</a></li>
+                                                <li><a class="dropdown-item" href="#">Languages</a></li>
+
+
+                                        </ul>
+                        </div>
+
+                        <a class="navbar-brand" href="./index.html">
+                                <img style="width: 160px; height: 50px;" src="images/logo1.png" class="img-fluid ms-2"
+                                        alt="...">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                        <li class="nav-item">
+                                                <form class="d-flex" role="search">
+                                                        <input class="form-control me-2" type="search"
+                                                                placeholder="Search" aria-label="Search">
+                                                        <button class="btn btn-outline-success"
+                                                                type="submit">Search</button>
+                                                </form>
+                                        </li>
+
+                                </ul>
+
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                        href="./Createaccount.html">Create
+                                                        Account</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="./Login.html">Login</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Three dots icon -->
+                                                        <span><i class="bi bi-three-dots"></i></span>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end"
+                                                        aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">Pages for logged out editors(learn more)</a></li>
+                                                        <li><a class="dropdown-item" href="#">Contributions</a></li>
+                                                        <li>
+                                                                <hr class="dropdown-divider">
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Talk</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+
+                                </ul>
+                        </div>
+                </div>
+        </nav>
+        <div class="container">
+                <div class="d-flex justify-content-between border-bottom border-black">
+                        <div class="d-flex"> <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"> <i class="bi bi-list-ul"></i>
+                                        <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Contents</a></li>
+                                                <hr class="dropdown-divider">
+                                                <li><a class="dropdown-item" href="#">(Top)</a></li>
+                                                <li><a class="dropdown-item" href="#">Etymology</a></li>
+                                                <li><a class="dropdown-item" href="#">List of jackets</a></li>
+                                                <li><a class="dropdown-item" href="#">See also</a></li>
+                                                <li><a class="dropdown-item" href="#">References</a></li>
+                                                <li><a class="dropdown-item" href="#">External links</a></li>
+
+
+                                        </ul>
+                                        <h5 class="ms-2">Jacket</h5>
+                        </div>
+
+                </div>
+                <div class="d-flex justify-content-between">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation"> <button class="nav-link active" id="home-tab"
+                                                data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                                                role="tab" aria-controls="home-tab-pane"
+                                                aria-selected="true">Article</button> </li>
+                                <li class="nav-item" role="presentation"> <button class="nav-link" id="profile-tab"
+                                                data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                                                role="tab" aria-controls="profile-tab-pane"
+                                                aria-selected="false">Talk</button> </li>
+
+                        </ul>
+
+                </div>
+                <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="row">
+                                        <div class="col-8">
+
+                                                <p>From Wikipedia, the free encyclopedia</p>
+                                                <p>This article is about the garment. For other uses, see <a
+                                                                href="">Jacket
+                                                                (disambiguation).</a></p>
+                                                <p>A jacket is a garment for the upper body, usually extending below the
+                                                        hips.[1] A
+                                                        jacket typically has <a href="">sleeves </a>and fastens in the
+                                                        front or
+                                                        slightly on the side. A
+                                                        jacket is generally lighter, tighter-fitting, and less
+                                                        insulating than a <a href="">coat</a>,
+                                                        which is <a href="">outerwear.</a> Some jackets are <a
+                                                                href="">fashionable</a>, while others
+                                                        serve as
+                                                        <a href="">protective clothing</a>. Jackets without sleeves are
+                                                        <a href="">vests.</a>
+                                                </p>
+                                                <h6>Etymology</h6>
+                                                <hr class="divider">
+                                                <p>The word jacket comes from the French word jaquette. The
+                                                        term comes from
+                                                        the <a href="">Middle French</a>
+                                                        noun jaquet, which refers to a small or lightweight
+                                                        <a href="">tunic.[2]</a> In <a href="">Modern French</a>
+                                                        , jaquette is synonymous with jacket. Speakers of <a
+                                                                href="">American English</a>
+                                                        sometimes informally use the words jacket and coat
+                                                        interchangeably.[3] The word
+                                                        is cognate with <a href="">Spanish</a> jaco and <a
+                                                                href="">Italian</a> giacca or giacchetta,
+                                                        first recorded
+                                                        around 1350s. It is ultimately loaned from Arabic shakk (شكّ),
+                                                        which in turn
+                                                        loaned from <a href="">Aramean/Assyrian</a> and <a
+                                                                href="">Hebrew </a>shaḳḳ (שַׁקּ).[4
+                                                </p>
+                                                <h6>List of Jackets</h6>
+                                                <hr class="divider">
+                                        </div>
+                                        <div class="col-3">
+
+                                                <img src="images/330px-Jacket2-1.jpg" class="rounded" alt="...">
+                                                <p>A man wearing a <a href="">sports jacket</a>.</p>
+
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-8">
+                                                <ul>
+                                                        <li><a href="">Heated Jackets</a></li>
+                                                        <li><a href="">Atilla</a>, a fancy Hungarian shell-jacket or
+                                                                short coat,
+                                                                decorated with <a href="">braided</a>
+                                                                cord and knots</li>
+                                                        <li><a href="">Ball jacket</a>, often specified as a <a
+                                                                        href="">baseball </a>jacket or
+                                                                <a href="">football</a> jacket, a
+                                                                casual jacket with knitted cuffs, collar, and waistband
+                                                                and a zippered
+                                                                front
+                                                        </li>
+                                                        <li><a href="">Bed jacket</a>, a jacket made from lightweight
+                                                                material designed
+                                                                to be worn in
+                                                                bed</li>
+                                                        <li><a href="">Blazer</a>, similar to but more casual than a
+                                                                suit jacket;
+                                                                single- or
+                                                                double-breasted of sturdy material, commonly with metal
+                                                                buttons.</li>
+                                                        <li><a href="">Blouson</a>, a military-style waist-length
+                                                                jacket.</li>
+                                                        <li><a href="">Bolero</a>, a very short jacket for everyone,
+                                                                originally worn by
+                                                                <a href="">matadors</a>
+                                                        </li>
+                                                        <li><a href="">Bomber jacket</a>, a blouson originally designed
+                                                                for US aircrews
+                                                                in leather or
+                                                                nylon.</li>
+                                                        <li><a href="">Brunswick</a>,a two-piece woman's gown of the
+                                                                mid-eighteenth
+                                                                century.</li>
+                                                        <li><a href="">Caraco</a>, a woman's jacket of the 18th century.
+                                                        </li>
+                                                        <li><a href="">Cardigan</a>, a sweater worn like a jacket.</li>
+                                                        <li><a href="">Chef's jacket</a></li>
+                                                        <li><a href="">Chore jacket</a> or chore coat, a jacket made of
+                                                                <a href="">denim</a> or other
+                                                                robust cloth,
+                                                                with large front pockets, originally a piece of workwear
+                                                        </li>
+                                                        <li><a href="">Dinner jacket</a>, part of the black-tie dress
+                                                                code of evening
+                                                                formal wear. Also
+                                                                known as a Dinner suit and a Tuxedo.</li>
+                                                        <li><a href="">Donkey jacket</a></li>
+                                                        <li><a href="">Doublet (clothing)</a></li>
+                                                        <li><a href="">Down jacket</a>, a quilted jacket filled with <a
+                                                                        href="">down feathers</a>
+                                                        </li>
+                                                        <li><a href="">Eisenhower jacket</a>, a waist-length, fitted,
+                                                                military-inspired
+                                                                jacket with a
+                                                                waistband based on the <a href="">World War II</a>
+                                                                British Army's
+                                                                Battle Dress jacket
+                                                                introduced by <a href="">General Dwight Eisenhower</a>
+                                                        </li>
+
+
+                                                        <li><a href="">Field jacket</a>, a jacket that is worn by
+                                                                soldiers on the
+                                                                battlefield or doing
+                                                                duties in cold weather. The field jacket came about
+                                                                during World War II
+                                                                with the <a href="">US Army</a> introducing the M-1941
+                                                                and the M-1943
+                                                                field jacket and
+                                                                issued the jacket to their troops. The most well-known
+                                                                and the most
+                                                                popular type of military field jacket that is on the
+                                                                market today is the
+                                                                <a href="">M-1965 or M-65 field jacket</a> which came
+                                                                into US military
+                                                                service in 1965.
+                                                        </li>
+                                                        <li><a href="">Flak jacket</a>, 20th century armoured vest</li>
+                                                        <li><a href="">Fleece jacket</a>, a casual jacket made of
+                                                                synthetic wool such
+                                                                as <a href="">Polar Fleece</a>
+                                                        </li>
+                                                        <li><a href="">Flight jacket</a>, also known as a bomber jacket
+                                                        </li>
+                                                        <li><a href="">Gilet</a>, a sleeveless jacket or vest.</li>
+                                                        <li><a href="">Hacking jacket</a></li>
+                                                        <li><a href="">Harrington jacket</a>, a lightweight waist-length
+                                                                jacket</li>
+                                                        <li><a href="">Hoodie</a>, a zippered hooded sweatshirt (non
+                                                                zippered can be
+                                                                considered a
+                                                                sweatshirt only)</li>
+                                                        <li><a href="">Jean jacket</a> or <a href="">denim</a> jacket, a
+                                                                jacket falling slightly below
+                                                                the waist,
+                                                                usually of denim, with buttoned band <a
+                                                                        href="">cuffs</a> like a shirt
+                                                                and a waistband
+                                                                that can be adjusted by means of buttons. Also called
+                                                                Levi's jacket (see
+                                                                <a href="">Levi's</a>)
+                                                        </li>
+                                                        <li><a href="">Jerkin</a></li>
+                                                        <li>Kilt jacket, one of several styles of traditional <a
+                                                                        href="">Scottish</a>
+                                                                jacket worn with
+                                                                the <a href="">kilt</a>, including the Argyll jacket,
+                                                                the Prince
+                                                                Charlie jacket, and a
+                                                                type of a <a href="">tweed</a> jacket</li>
+                                                        <li><a href="">Leather jacket</a>, also known as a motorcycle
+                                                                jacket</li>
+                                                        <li><a href="">Letter jacket</a> also known as a <a
+                                                                        href="">letterma</a>n or <a href="">varsity
+                                                                        jacket</a>
+                                                        </li>
+                                                        <li><a href="">Mackinaw jacket</a></li>
+                                                        <li><a href="">Mess jacket</a> or eton jacket, similar to a
+                                                                tailcoat but cut
+                                                                off just below the
+                                                                waist. Worn as part of <a href="">mess dress</a> and
+                                                                formerly as the
+                                                                school uniform of
+                                                                boys under 5'4" at <a href="">Eton College</a> until
+                                                                1976 and at many
+                                                                other English
+                                                                schools, particularly choir schools[6]</li>
+                                                        <li><a href="">Motorcycle jacket</a>, a leather jacket, usually
+                                                                black, worn by
+                                                                <a href="">motorcycle</a>
+                                                                riders; originally to mid-thigh, now usually to a fitted
+                                                                waist
+                                                        </li>
+                                                        <li><a href="">Nehru jacket</a></li>
+                                                        <li><a href="">Norfolk jacket</a></li>
+                                                        <li><a href="">Parka</a></li>
+                                                        <li><a href="">Peplum jacket</a>, a jacket featuring a short <a
+                                                                        href="">overskirt</a></li>
+                                                        <li><a href="">Puffer jacket</a> or Puffa jacket, a type of
+                                                                padded jacket
+                                                                popular in the 1990s
+                                                        </li>
+                                                        <li>Rain jacket, a short <a href="">rain coat</a></li>
+                                                        <li><a href="">Hardshell jacket</a>, a wind and waterproof
+                                                                jacket typically
+                                                                made of breathable synthetic materials, lacking
+                                                                insulation and fabric softness</li>
+                                                        <li>Reefing jacket or reefer, a type of <a href="">pea coat</a>
+                                                        </li>
+                                                        <li>Riding jacket, part of a <a href="">riding habit</a></li>
+                                                        <li><a href="">Sailor jacket</a></li>
+                                                        <li>Satin jacket, a type of ball jacket made of <a
+                                                                        href="">satin</a> and
+                                                                popular in the 1950s </li>
+                                                        <li><a href="">Smart jacket</a>, with built-in heating elements
+                                                                on the chest,
+                                                                hands and back.
+                                                                It keeps the wearer warm in cold weather. It comes with
+                                                                special sensors
+                                                                to let the wearer adjust the heat output as per his
+                                                                convenience.[7]</li>
+                                                        <li><a href="">Smoking jacket</a></li>
+                                                        <li><a href="">Spencer</a>, a high-waisted jacket dating to the
+                                                                <a href="">Regency
+                                                                        period</a>
+                                                        </li>
+                                                        <li><a href="">Sport coat</a> (US) or Sports jacket (UK), a
+                                                                tailored jacket,
+                                                                similar in cut to a suit coat but more utilitarian,
+                                                                originally casual wear for <a href="">hunting</a>, <a
+                                                                        href="">riding</a>, and other
+                                                                outdoor sports; specific types include a shooting jacket
+                                                                and hacking jacket</li>
+                                                        <li><a href="">Suit jacket</a></li>
+                                                        <li><a href="">Tabard</a>, a loose sleeveless outer garment</li>
+                                                        <li><a href="">Tunic</a>, a thigh length coat or jacket worn
+                                                                with a wide range
+                                                                of military and civilian uniforms</li>
+                                                        <li><a href="">Windbreaker </a>(N. American, Japan) or
+                                                                windcheater (UK)</li>
+                                                        <li><a href="">Tracksuit </a>jacket</li>
+                                                        <li><a href="">Wamus</a>, also called a "roundabout," a
+                                                                traditional American
+                                                                term for a short jacket.</li>
+                                                </ul>
+
+                                        </div>
+                                        <div class="col">
+
+                                                <img src="images/Jacket_MET_CI60.26.8_F.jpg" class="rounded" alt="...">
+                                                <p>British jacket, ca. 1600–1625, linen, silk, wool. <a
+                                                                href="">Metropolitan Museum of Art.[5]</a></p>
+                                        </div>
+                                        <p class="text-center">A gallery of various types of jackets</p>
+                                        <div class="row">
+                                                <div class="col p-0">
+                                                        <img style=" height:209px; width: 156px;"
+                                                                src="images/212px-Bomber_jacket.jpg" alt="">
+                                                        <p>Nylon <a href="">bomber jacket</a>, also in leather</p>
+
+                                                </div>
+                                                <div class="col">
+                                                        <img style=" height:209px; width: 156px;"
+                                                                src="images/Jacket,_mess_(AM_1979.59-1).jpg" alt="">
+                                                        <p>A <a href="">mess jacket</a></p>
+                                                </div>
+                                                <div class="col">
+                                                        <img style="height: 209px; width: 180px;"
+                                                                src="images/Leather_Jacket_(51011162080).jpg" alt="">
+                                                        <p>A <a href="">leather jacket</a></p>
+                                                </div>
+                                                <div class="col">
+                                                        <img style="height: 209px; width: 156px;"
+                                                                src="images/360px-FILA-Daunenjacke.jpeg" alt="">
+                                                        <p>A <a href="">down jacket</a></p>
+                                                </div>
+                                                <div class="col">
+                                                        <img style="height:209px; width: 156px;"
+                                                                src="images/Hard-shell-jacket.jpg" alt="">
+                                                        <p>A <a href="">waterproof jacket</a>
+                                                        </p>
+                                                </div>
+                                                <div class="col">
+                                                        <img style="height: 209px; width: 156px;"
+                                                                src="images/201px-DustyRoyParka.jpg" alt="">
+                                                        <p>A <a href="">parka</a></p>
+
+                                                </div>
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+                        <h6>See also {<a href="">edit</a>}</h6>
+                        <hr class="divider">
+                        <ul>
+                                <li><a href="">Sweater</a></li>
+                                <li><a href="">Sweatshirt</a></li>
+                                <li><a href="">Trousers</a></li>
+                                <li><a href="">Skirts</a></li>
+
+                        </ul>
+                        <h6>References {<a href="">edit</a>}</h6>
+                        <hr class="divider">
+                        <ol>
+                                <li> Picken, Mary Brooks (1999) [1957]. <a href="">A Dictionary of Costume and
+                                                Fashion.</a>
+                                        Dover Publications. p. <a href="">185. ISBN 978-0-486-40294-9</a>.</li>
+                                <li> Harper, Douglas. <a href="">"jacket"</a> . <a href="">Online Etymology
+                                                Dictionary</a>. Retrieved
+                                        2011-09-07.</li>
+                                <li> <a href="">Oxford English Dictionary</a>, <a href="">Oxford University Press</a>,
+                                        1971</li>
+                                <li> Nishanyan, Sevan. <a href="">"ceket (jacket) - Nishanyan Soezluek"</a> . Nishanyan
+                                        Soezluek. Nishanian Soezluec. Retrieved 11 September 2022.</li>
+                                <li> <a href="">"Jacket, British, 1600–1625"</a>. <a href="">Metropolitan Museum of
+                                                Art</a> website.
+                                </li>
+                                <li> <a href="">"The Eton Suit"</a> . Archived from <a href="">the original</a> on
+                                        2008-07-23.
+                                        Retrieved
+                                        2008-03-22.</li>
+                                <li> <a href="">"40 Cool and Awesome Inventions You Should Know About"</a> . 31 December
+                                        2018.
+                                        Archived from <a href="">the original</a> on 2021-02-14.</li>
+                        </ol>
+                        </ol>
+                        <h6>External Links</h6>
+                        <hr class="divider">
+
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col">
+                                                <img src="./images/Commons-logo.svg.webp" class="img-fluid" alt="Image">
+                                                <span>Media related to Jackets at Wikimedia Commons</span>
+                                                <p></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div style="background-color: #CCCCFF;"
+                                class="d-flex justify-content-between border border-3 p-2">
+                                <div><a href="">V</a> * <a href="">T</a> * <a href="">E</a></div>
+                                <div><a href="">Clothing</a></div>
+                                <div>[<a href="">Show</a>]</div>
+                        </div>
+                        <div class="d-flex justify-content-start border border-3">
+                                <div style="background-color: #CCCCFF;"><a href="">Authority control databases:
+                                                Natural</a></div>
+                                <div class="ms-2"><a href="">Israel - United States</a></div>
+                        </div>
+                        <div class="d-flex justify-content-start border border-3">
+                                <div style="background-color: #CCCCFF;"><a href="">Categories:</a></div>
+                                <div class="ms-2 pe-2  border-end  border-2"><a href="">Jackets</a></div>
+                                <div class="ms-2"><a href="">History of clothing
+                                                (Western fashion)</a></div>
+
+                        </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0"> Profile page</div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0"> Contact Page</div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                        tabindex="0">disabled</div>
+        </div>
+        <div class="container-fluid">
+                <hr class="divider">
+                <p>This page was last edited on 16 January 2024, at 13:46 (UTC).</p>
+
+                <p>Text is available under the <a href="">Creative Commons Attribution-ShareAlike License 4.0</a>
+                        ;
+                        additional terms may apply. By using this site, you agree to the <a href="">Terms of Use</a>
+                        and <a href="">Privacy Policy.</a> Wikipedia® is a registered trademark of the
+                        <a href="">Wikimedia Foundation, Inc.</a>
+                        , a non-profit organization.
+                </p>
+                <p><a href="">Privacy policy About Wikipedia Disclaimers Contact Wikipedia Code of Conduct
+                                Developers Statistics Cookie statement Mobile view</a></p>
+        </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>

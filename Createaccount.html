@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+                <div class="d-flex"> <a class="nav-link toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> <i class="bi bi-list"></i>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Main page</a></li>
+                                    <li><a class="dropdown-item" href="#">Contents</a></li>
+                                    <li><a class="dropdown-item" href="#">Current events</a></li>
+                                    <li><a class="dropdown-item" href="#">Random article</a></li>
+                                    <li><a class="dropdown-item" href="#">About Wikipedia</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                    <li><a class="dropdown-item" href="#">Donate</a></li>
+                                    <li><a class="dropdown-item" href="#">Contribute</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Help</a></li>
+                                    <li><a class="dropdown-item" href="#">Learn to edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Community portal</a></li>
+                                    <li><a class="dropdown-item" href="#">Recent changes</a></li>
+                                    <li><a class="dropdown-item" href="#">Upload file</a></li>
+                                    <li><a class="dropdown-item" href="#">Languages</a></li>
+
+
+                            </ul>
+                </div>
+
+                <a class="navbar-brand" href="./index.html">
+                        <img style="width: 160px; height: 50px;" src="images/logo1.png" class="img-fluid ms-2"
+                                alt="...">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                        <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search"
+                                                        placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-success"
+                                                        type="submit">Search</button>
+                                        </form>
+                                </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                                href="./Createaccount.html">Create
+                                                Account</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="./Login.html">Login</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <!-- Three dots icon -->
+                                                <span><i class="bi bi-three-dots"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Pages for logged out editors(learn more)</a></li>
+                                                <li><a class="dropdown-item" href="#">Contributions</a></li>
+                                                <li>
+                                                        <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Talk</a>
+                                                </li>
+                                        </ul>
+                                </li>
+
+                        </ul>
+                </div>
+        </div>
+</nav>
+    <div class="container">
+        <h3 class="border-bottom border-3">Create Account</h3>
+
+        <div class="d-flex flex-row-reverse border-bottom border-3">
+            <div>
+                <div class="btn-groupstart">
+                    <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Tools
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Tools</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="#">General</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="#">Upload File</a></li>
+                        <li><a class="dropdown-item" href="#">Special Pages</a></li>
+                        <li><a class="dropdown-item" href="#">Printable version</a></li>
+                        <li><a class="dropdown-item" href="#">Get Shortened URL</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="w-25">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input placeholder="Enter your username" type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+
+                </div>
+                <p>Your username is public and cannot be made private later.</p>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input placeholder="Enter a password" type="password" class="form-control"
+                        id="exampleInputPassword1">
+
+                </div>
+                <p>It is recommended to use a unique password that you are not using on any other website.</p>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm password</label>
+                    <input placeholder="Enter password again" type="password" class="form-control"
+                        id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email address(recommended)</label>
+                    <input placeholder="Enter your email address" type="password" class="form-control"
+                        id="exampleInputPassword1">
+
+                </div>
+                <p>Email is required to recover your account if you lose your password.</p>
+                <p>To protect the wiki against automated account creation, we kindly ask you to enter the words that
+                    appear below in the box <a href="">(more info)</a>:</p>
+                <!-- <title>Text CAPTCHA Example</title> -->
+
+                <div id="captcha-container">
+                    <label class="form-label mt-2" for="captcha">CAPTCHA Security Check</label>
+                    <div id="captcha" class="boder"></div>
+                    <div id="boder">
+                        <input type="text" class="form-control my-3 border border-5" id="user-input"
+                            placeholder="Enter the text">
+                    </div>
+                    <button type="button" class="btn bg-success text-light" onclick="validateCaptcha()">Create your account</button>
+                    <!-- <button onclick="validateCaptcha()"  class="btn border border-2">Submit</button> -->
+                </div>
+
+
+
+
+
+
+            </form>
+
+            <div style="background-image:'./images/bg.jpg'"></div>
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
